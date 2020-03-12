@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Real Estate Tax - Homestead Exemption</title>
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+    <link rel="stylesheet" type="text/css" href="phila-ui.css">
+  </head>
+  <body>
+    <div id="app">
+      <header id="main-header" class="header">
+        <nav role="navigation" aria-label="main navigation" class="navbar main-nav is-dark-ben-franklin">
+          <div class="container">
+            <div class="navbar-brand is-block-mobile">
+              <div class="navbar-item is-block-mobile phl-logo"><a href="https://www.phila.gov" target="_blank" class="is-inline-block"><img src="https://standards.phila.gov/img/logo/city-of-philadelphia-yellow-white.png" alt="City of Philadelphia logo" width="170"></a></div>
+              <div class="navbar-item navbar-separator is-hidden-mobile"><span></span></div>
+              <div class="navbar-item is-block-mobile has-text-centered-mobile">
+                <a href="/" class="phl-app-title">
+                  <h1 class="is-size-5">
+                    Real Estate Tax - Homestead Exemption
+                  </h1>
+                </a>
+              </div>
+            </div>
+            <div class="navbar-menu is-hidden-mobile">
+              <div class="navbar-end"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="container main content">      
+    <p>Enter the OPA Account Number (formerly BRT number) for the property you are applying for and click Continue. The OPA Account Number is a nine digit number. You can find it on your Real Estate Tax Bill or use your address to look it up online.</p>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="border-01">
+            <tbody><tr>
+                <td width="275px" align="left" valign="top" class="blue-bg">
+                    <span id="MainContent_Label4">OPA Account Number</span>
+                </td>
+                <td width="630px" align="left" valign="top" class="blue-bg">
+                    <input name="ctl00$MainContent$txtOPAAccountNumber" type="text" maxlength="9" id="MainContent_txtOPAAccountNumber">
+                    <span id="MainContent_Label36" style="color:Red;">*</span>
+                    &nbsp;
+                        
+                    <input class="button" type="submit" name="ctl00$MainContent$btnSearchOPA" value="Continue" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnSearchOPA&quot;, &quot;&quot;, true, &quot;vgHSApp&quot;, &quot;&quot;, false, false))" id="MainContent_btnSearchOPA" class="go-btn">
+
+                    &nbsp;
+                    <span id="MainContent_RequiredFieldValidator3" style="color:Red;display:none;">Required.</span>
+                    &nbsp; 
+                    <a href="http://opa.phila.gov/opa.apps/Search/SearchForm.aspx?url=search" class="" target="_blank">Account Look-Up</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="MainContent_Label3">Address</span>
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$txtStreetName" type="text" maxlength="250" id="MainContent_txtStreetName" disabled="disabled" class="aspNetDisabled">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="MainContent_Label15">Unit/Apt #</span>
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$txtApt" type="text" maxlength="7" id="MainContent_txtApt" disabled="disabled" class="aspNetDisabled">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="MainContent_Label16">City</span>
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$txtCity" type="text" value="Philadelphia" maxlength="50" id="MainContent_txtCity" disabled="disabled" class="aspNetDisabled">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="MainContent_Label18">State</span>
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$txtState" type="text" value="PA" maxlength="2" id="MainContent_txtState" disabled="disabled" class="aspNetDisabled" style="width:40px;text-transform:uppercase">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="MainContent_Label17">Zip Code</span>
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$txtZipCode" type="text" maxlength="10" id="MainContent_txtZipCode" disabled="disabled" class="aspNetDisabled" style="width:80px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span id="MainContent_Label1">Owner Name 1</span>
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$txtOwnerName1" type="text" maxlength="250" id="MainContent_txtOwnerName1" disabled="disabled" class="aspNetDisabled">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="MainContent_Label2">Owner Name 2</span>
+                </td>
+                <td>
+                    <input name="ctl00$MainContent$txtOwnerName2" type="text" maxlength="250" id="MainContent_txtOwnerName2" disabled="disabled" class="aspNetDisabled">
+                </td>
+            </tr>
+
+        </tbody></table>
+
+        
+        <div class="form-footer">
+            <div class="terms-check">
+                <span style="font-size:16px;"><input id="chkConfirmAddress" type="checkbox" name="ctl00$MainContent$chkConfirmAddress" onclick="EnableNextButton();"><label for="chkConfirmAddress"> I confirm that the Property Address and Owner information is correct.</label></span>
+            </div>
+
+
+    
+            <input class="button" type="submit" name="ctl00$MainContent$btnNext" value="Next" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnNext&quot;, &quot;&quot;, true, &quot;vgHSApp&quot;, &quot;&quot;, false, false))" id="MainContent_btnNext" class="go-btn" disabled="">
+            
+            <div class="mt20"><span class="red"> *</span> Required</div>
+        </div>
+
+        <p class="incorrect">If the owner/property address for this account number is incorrect, <a href="https://property.phila.gov/" target="_blank">look up the account number</a> using the property address. If you continue to have problems, call 215-686-9200.</p>
+
+    </div>
+
+
+</form>
+</main>
+<footer id="main-footer" class="footer">
+  <div class="has-text-centered">
+    <ul class="inline-list">
+      <li><a href="/" class="router-link-exact-active router-link-active">
+        City of Philadelphia
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+</div>
+</body>
+</html>
